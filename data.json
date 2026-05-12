@@ -1,0 +1,202 @@
+{
+  "sparklineIngresos": [
+    {
+      "mes": "2025-04",
+      "ingresos": 79603.63
+    },
+    {
+      "mes": "2025-05",
+      "ingresos": 89042.62
+    },
+    {
+      "mes": "2025-06",
+      "ingresos": 93203.89
+    },
+    {
+      "mes": "2025-07",
+      "ingresos": 151040.1
+    },
+    {
+      "mes": "2025-08",
+      "ingresos": 99630.7
+    },
+    {
+      "mes": "2025-09",
+      "ingresos": 94545.85
+    },
+    {
+      "mes": "2025-10",
+      "ingresos": 130236.87
+    },
+    {
+      "mes": "2025-11",
+      "ingresos": 154511.79
+    },
+    {
+      "mes": "2025-12",
+      "ingresos": 196979.69
+    },
+    {
+      "mes": "2026-01",
+      "ingresos": 198713.06
+    },
+    {
+      "mes": "2026-02",
+      "ingresos": 137099.43
+    },
+    {
+      "mes": "2026-03",
+      "ingresos": 75892.16
+    }
+  ],
+  "ventasPorCanal": [
+    {
+      "canal": "App",
+      "pedidos": 3748
+    },
+    {
+      "canal": "Web",
+      "pedidos": 2754
+    }
+  ],
+  "ingresosPorMes": [
+    {
+      "mes": "2024-01",
+      "ingresos": 27488.28
+    },
+    {
+      "mes": "2024-02",
+      "ingresos": 25835.61
+    },
+    {
+      "mes": "2024-03",
+      "ingresos": 30862.42
+    },
+    {
+      "mes": "2024-04",
+      "ingresos": 33861.5
+    },
+    {
+      "mes": "2024-05",
+      "ingresos": 27470.71
+    },
+    {
+      "mes": "2024-06",
+      "ingresos": 34814.92
+    },
+    {
+      "mes": "2024-07",
+      "ingresos": 57045.79
+    },
+    {
+      "mes": "2024-08",
+      "ingresos": 42085.66
+    },
+    {
+      "mes": "2024-09",
+      "ingresos": 42861.48
+    },
+    {
+      "mes": "2024-10",
+      "ingresos": 63554.7
+    },
+    {
+      "mes": "2024-11",
+      "ingresos": 75917.5
+    },
+    {
+      "mes": "2024-12",
+      "ingresos": 89264.77
+    },
+    {
+      "mes": "2025-01",
+      "ingresos": 99420.43
+    },
+    {
+      "mes": "2025-02",
+      "ingresos": 72027.52
+    },
+    {
+      "mes": "2025-03",
+      "ingresos": 80259.35
+    },
+    {
+      "mes": "2025-04",
+      "ingresos": 79603.63
+    },
+    {
+      "mes": "2025-05",
+      "ingresos": 89042.62
+    },
+    {
+      "mes": "2025-06",
+      "ingresos": 93203.89
+    },
+    {
+      "mes": "2025-07",
+      "ingresos": 151040.1
+    },
+    {
+      "mes": "2025-08",
+      "ingresos": 99630.7
+    },
+    {
+      "mes": "2025-09",
+      "ingresos": 94545.85
+    },
+    {
+      "mes": "2025-10",
+      "ingresos": 130236.87
+    },
+    {
+      "mes": "2025-11",
+      "ingresos": 154511.79
+    },
+    {
+      "mes": "2025-12",
+      "ingresos": 196979.69
+    },
+    {
+      "mes": "2026-01",
+      "ingresos": 198713.06
+    },
+    {
+      "mes": "2026-02",
+      "ingresos": 137099.43
+    },
+    {
+      "mes": "2026-03",
+      "ingresos": 75892.16
+    }
+  ],
+  "ingresosPorCategoria": [
+    {
+      "categoria": "Electrónica",
+      "ingresos": 1471913.73
+    },
+    {
+      "categoria": "Videojuegos",
+      "ingresos": 295439.82
+    },
+    {
+      "categoria": "Hogar y cocina",
+      "ingresos": 250336.08
+    },
+    {
+      "categoria": "Juguetes y juegos",
+      "ingresos": 128493.28
+    },
+    {
+      "categoria": "Belleza",
+      "ingresos": 74637.27
+    },
+    {
+      "categoria": "Deportes",
+      "ingresos": 73636.58
+    },
+    {
+      "categoria": "Alimentación y bebidas",
+      "ingresos": 31545.26
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- D3.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dashboard E-commerce</h1>
+        <p>Carlos Tesoriero · @ctesorierog</p>
+    </header>
+
+    <main>
+
+        <section class="grid">
+
+            <!-- CHART 1: CANVAS -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>Ingresos últimos 12 meses</h2>
+                    <span class="chart-tag">Canvas · @ctesorierog</span>
+                </div>
+                <div class="chart-body">
+                    <canvas id="chart1" width="500" height="250"></canvas>
+                </div>
+            </div>
+
+            <!-- CHART 2: SVG -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>Ventas por canal</h2>
+                    <span class="chart-tag">SVG · @ctesorierog</span>
+                </div>
+                <div class="chart-body">
+                    <svg id="chart2" width="500" height="250"></svg>
+                </div>
+            </div>
+
+            <!-- CHART 3: CHART.JS -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>Tendencia de ingresos</h2>
+                    <span class="chart-tag">Chart.js · @ctesorierog</span>
+                </div>
+                <div class="chart-body">
+                    <canvas id="chart3"></canvas>
+                </div>
+            </div>
+
+            <!-- CHART 4: D3.JS -->
+            <div class="chart-card">
+                <div class="chart-header">
+                    <h2>Top categorías</h2>
+                    <span class="chart-tag">D3.js · @ctesorierog</span>
+                </div>
+                <div class="chart-body">
+                    <svg id="chart4" width="500" height="250"></svg>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
