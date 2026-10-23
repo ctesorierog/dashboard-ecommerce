@@ -251,7 +251,7 @@ function drawChart4(datos) {
     const svg = d3.select('#chart4');
     const W = svg.node().clientWidth;
     const H = svg.node().clientHeight;
-    const margin = { top: 10, right: 50, bottom: 10, left: 90 };
+    const margin = { top: 10, right: 50, bottom: 10, left: 150 };
     const innerW = W - margin.left - margin.right;
     const innerH = H - margin.top - margin.bottom;
 

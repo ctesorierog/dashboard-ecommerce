@@ -1,39 +1,46 @@
-# Dashboard E-commerce — Visualización de Datos
+# E-commerce dashboard: four ways to draw a chart on the web
 
-**Autor:** Carlos Tesoriero · @ctesorierog
+**Live demo: https://ctesorierog.github.io/dashboard-ecommerce/**
 
-Panel de control que visualiza datos de un e-commerce ficticio mediante cuatro tecnologías de gráficos web:
+A dark-theme dashboard for a fictional e-commerce store. Each panel uses a different web charting technique, from raw Canvas pixels to D3 data joins.
 
-| # | Tecnología | Gráfico | Datos |
+![Dashboard screenshot](docs/screenshot.png)
+
+| # | Technique | Chart | Data |
 |---|---|---|---|
-| 1 | **Canvas (JavaScript)** | Sparkline | Ingresos de los últimos 12 meses |
-| 2 | **SVG (JavaScript)** | Donut chart | Ventas por canal (Web vs App) |
-| 3 | **Chart.js** | Line chart | Tendencia de ingresos mensuales |
-| 4 | **D3.js** | Barras horizontales animadas | Top categorías por ingresos |
+| 1 | **Canvas 2D API** (vanilla JS) | Sparkline with area fill | Revenue, last 12 months |
+| 2 | **SVG** built from JS | Donut chart with centre total | Orders by channel (App vs Web) |
+| 3 | **Chart.js** | Smoothed line chart | Monthly revenue trend, 2024–2026 |
+| 4 | **D3.js** | Animated horizontal bars | Top categories by revenue |
 
-## Estructura del proyecto
+## Data
+
+The raw dataset is a relational e-commerce workbook (orders, order lines, products, customers, deliveries and returns). It was aggregated into `data.json` after adding calculated columns:
+
+- `IngresoLinea = NumUnidades × PrecioUnitarioVenta × (1 − DescuentoLineaPct)`
+- `CosteLinea`, `BeneficioLinea` and `MargenLineaPct` per order line
+- `MargenBruto` and `MargenPct` per product
+- `RetrasoEntregaDias` (delivery delay) per order
+
+The same data was also modelled in Power BI, with Power Query cleaning, a star-style model and DAX measures. The web version reimplements its key views by hand.
+
+## Run locally
+
+```bash
+python -m http.server 8000    # then open http://localhost:8000
+```
+
+A local server is needed because browsers block `fetch('data.json')` from `file://`.
+
+## Files
 
 ```
-dashboard-ecommerce/
-├── index.html       Estructura HTML
-├── style.css        Estilos (tema oscuro)
-├── script.js        Lógica de los 4 gráficos
-└── data.json        Datos agregados
+index.html   layout
+style.css    dark theme
+script.js    the four charts
+data.json    aggregated data
 ```
 
-## Cómo ejecutar
+## Context
 
-Abrir `index.html` en un navegador moderno (Chrome / Firefox / Edge).
-
-> Si `data.json` no carga al abrir el archivo localmente, servir la carpeta con un servidor local. Ejemplo con Python:
-> ```bash
-> python -m http.server 8000
-> ```
-> y abrir http://localhost:8000
-
-## Columnas calculadas (aplicadas al dataset original)
-
-- `IngresoLinea` = `NumUnidades * PrecioUnitarioVenta * (1 - DescuentoLineaPct)`
-- `CosteLinea`, `BeneficioLinea`, `MargenLineaPct`
-- `MargenBruto`, `MargenPct` en Productos
-- `RetrasoEntregaDias` en Pedidos
+*Visualización de Datos* course, AI Engineering, Tecnun – Universidad de Navarra, spring 2026.
